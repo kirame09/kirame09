@@ -1,3 +1,13 @@
+<?php
+
+$name = trim(strtolower($_POST['person']));
+if ($name === 'lyn' || $name === 'lynne') {
+    print_r("<h1>Hey ".$_POST["person"]."! Too desperate to be beautiful? Naw.. you're pretty, just burn some fats!!  :D</h1>");
+} else {
+    print_r("<h1>Hey ".$_POST["person"]."! Too desperate to be beautiful? Naw.. you're pretty, just kinda silly! :D</h1>");
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +39,7 @@
 <body>
 <h1>Do You Think You're Beautiful?</h1>
 
-<form method="post" id="form" action="test_action.php" onsubmit="return false;">
+<form method="post" id="form" action="/" onsubmit="return false;">
 <div style="width: auto; margin: 0 auto; text-align: center;">
     <input type="text" id="person" name="person" placeholder="Your name here">
 </div>
